@@ -12,6 +12,7 @@ $url_locate   = end($php_self_exp);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><?= isset($title)?$title:'Document' ?></title>
+    <link rel="icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
