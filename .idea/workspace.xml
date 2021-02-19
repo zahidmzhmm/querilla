@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d46030e-dbf2-4a0b-9932-bdca3272aedd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ct.php" beforeDir="false" afterPath="$PROJECT_DIR$/ct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/pay_submit.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/pay_submit.php" afterDir="false" />
-    </list>
+    <list default="true" id="7d46030e-dbf2-4a0b-9932-bdca3272aedd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613570593171</updated>
       <workItem from="1613570599439" duration="1223000" />
-      <workItem from="1613658907812" duration="5451000" />
+      <workItem from="1613658907812" duration="5708000" />
     </task>
     <servers />
   </component>
