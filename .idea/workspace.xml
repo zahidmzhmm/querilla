@@ -26,6 +26,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/querilla.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discover.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/19587441621935169.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/39563841621935169.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/add_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_product.php" afterDir="false" />
@@ -70,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621934252462</updated>
-      <workItem from="1621934258907" duration="1087000" />
+      <workItem from="1621934258907" duration="1724000" />
     </task>
     <servers />
   </component>
