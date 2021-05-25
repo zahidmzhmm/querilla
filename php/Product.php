@@ -10,7 +10,8 @@ class Product
         $price = $config->convert_sql($data['price']);
         $description = $config->convert_sql($data['description']);
         $big_des = $config->convert_sql($data['big_des']);
-        if (empty($file['img1']['name']) | empty($title) | empty($price) | empty($description)){
+        $keywords = $config->convert_sql($data['keywords']);
+        if (empty($file['img1']['name']) | empty($title) | empty($price) | empty($description) || empty($keywords)){
             $_SESSION['alert']="All Field is Required";
             header("location:../admin/add_product.php");
         }else{
@@ -20,7 +21,7 @@ class Product
                 $product_file = "";
             }
             $images = $this->image($file['img1']);
-            $insert = $config->query("INSERT INTO `products`(`title`, `description`, `big_des`, `file`, `price`, `images`) VALUES ('$title','$description','$big_des','$product_file','$price','$images')");
+            $insert = $config->query("INSERT INTO `products`(`title`, `description`, `big_des`, `keywords`, `file`, `price`, `images`) VALUES ('$title','$description','$big_des','$keywords','$product_file','$price','$images')");
             if ($insert===true){
                 $_SESSION['alert']="Success";
                 header("location:../admin/add_product.php");

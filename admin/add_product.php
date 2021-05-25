@@ -41,6 +41,10 @@ require_once "includes/header.php";
                     </div>
                 </div>
                 <div class="form-group">
+                    <input type="text" name="keywords" class="form-control" placeholder="Keywords">
+                    <small class="text-warning">For Multiple use ( Comma, ) </small>
+                </div>
+                <div class="form-group">
                     <textarea name="description" id="" cols="30" rows="4" class="form-control" placeholder="Description"></textarea>
                 </div>
                 <div class="form-group">

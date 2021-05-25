@@ -1,6 +1,4 @@
 <?php
-$title = "Product";
-include "includes/header.php";
 include "php/controller.php";
 if(!isset($_GET['product_id'])){
     header("location:shop.php");
@@ -12,6 +10,10 @@ if (!$checking==1){
     header("location:shop.php");
 }
 $data = mysqli_fetch_array($select);
+$title = $data['title'];
+$meta_description = $data['description'];
+$meta_keywords = $data['keywords'];
+include "includes/header.php";
 ?>
 <section class="product_body pt-5">
     <div class="container my-5">
@@ -54,10 +56,6 @@ $data = mysqli_fetch_array($select);
                         </div>
                         <div class="w-100"><button name="add_to_cart2" type="submit" class="card_button mb-3 mt-2">+ Add to Cart</button></div>
                     </form>
-<!--                    <div class="Category">-->
-<!--                        <span class="">Category: </span>-->
-<!--                        <span><a href="">Accessories</a> <a href="">Accessories</a> <a href="">Accessories</a> <a href="">Accessories</a></span>-->
-<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -67,6 +65,10 @@ $data = mysqli_fetch_array($select);
     <div class="container">
         <div class="row overflow-hidden mx-0">
             <?= $data['big_des'] ?>
+        </div>
+        <div class="my-3">
+            <span class="">Keywords: </span>
+            <span><?= $data['keywords'] ?></span>
         </div>
     </div>
 </section>
