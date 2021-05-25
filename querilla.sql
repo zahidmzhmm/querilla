@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2021 at 08:06 AM
+-- Generation Time: May 25, 2021 at 11:54 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -102,6 +102,7 @@ CREATE TABLE `products` (
   `title` text NOT NULL,
   `description` mediumtext NOT NULL,
   `big_des` longtext NOT NULL,
+  `keywords` varchar(55) NOT NULL,
   `file` varchar(255) NOT NULL,
   `price` varchar(255) NOT NULL,
   `images` text NOT NULL,
@@ -113,26 +114,27 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `title`, `description`, `big_des`, `file`, `price`, `images`, `status`, `inserted_at`) VALUES
-(3, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-3.jpg', 1, '0000-00-00 00:00:00'),
-(4, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-3.jpg', 1, '0000-00-00 00:00:00'),
-(5, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(6, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(8, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(9, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(10, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(11, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(12, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(14, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(15, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(16, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(17, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(18, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(19, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(20, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(21, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(22, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
-(24, 'Adobe After Effects CC 2020', 'Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020', '<p>Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020<br></p>', '39304591613026874.jpg', '12', '23588391613026874.jpg', 1, '2021-02-11 07:01:14');
+INSERT INTO `products` (`id`, `title`, `description`, `big_des`, `keywords`, `file`, `price`, `images`, `status`, `inserted_at`) VALUES
+(3, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-3.jpg', 1, '0000-00-00 00:00:00'),
+(4, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-3.jpg', 1, '0000-00-00 00:00:00'),
+(5, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(6, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(8, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(9, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(10, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(11, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(12, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(14, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(15, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(16, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(17, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(18, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(19, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(20, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(21, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(22, 'Lorem ipsum dolor sit amet', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', '', '', '', '14.40', 'img-4.jpg', 1, '0000-00-00 00:00:00'),
+(24, 'Adobe After Effects CC 2020', 'Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020', '<p>Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020Adobe After Effects CC 2020<br></p>', '', '39304591613026874.jpg', '12', '23588391613026874.jpg', 1, '2021-02-11 07:01:14'),
+(25, 'Present your awesome product', 'Test', '<p>Test</p>', 'test, test02, test03', '19587441621935169.jpg', '12', '39563841621935169.jpg', 1, '2021-05-25 09:32:49');
 
 -- --------------------------------------------------------
 
@@ -215,7 +217,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `users`
