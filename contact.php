@@ -12,6 +12,19 @@ include "includes/header.php"; ?>
 </header>
 
 <section class="contanct_body my-5">
+    <div class="container py-3">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- index_page -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4574787651313621"
+             data-ad-slot="6201557053"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -23,22 +36,18 @@ include "includes/header.php"; ?>
                         </div>
                         <div class="text">
                             <h6>Email:</h6>
-                            <p>Contact@erentheme.com</p>
+                            <a href="mailto:contact@querilla.com">contact@querilla.com</a>
                         </div>
                     </div>
                     <div class="row m-0 p-0 mb-5">
                         <div class="icon">
-                            <span><i class="fas fa-phone"></i></span>
+                            <span><i class="fab fa-skype"></i></span>
                         </div>
                         <div class="text">
-                            <h6>Number Phone:</h6>
-                            <p>(800) 123 456 789, (800) 987 654 321</p>
+                            <h6>Skype:</h6>
+                            <a href="skype:assignmenthelper?chat">assignmenthelper</a>
                         </div>
                     </div>
-                    <p>
-                        Outstock is a premium Templates theme with advanced admin module. It’s extremely customizable, easy to use and fully responsive and retina ready. Vel illum dolore eu feugiat nulla facilisis at vero eros et
-                        accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                    </p>
                     <div class="icon2 mb-5">
                         <a href=""><i class="fab fa-dribbble"></i></a>
                         <a href=""><i class="fab fa-facebook-f"></i></a>

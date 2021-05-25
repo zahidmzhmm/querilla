@@ -16,27 +16,24 @@ if ($url_locate=='page.php'){
     </div>
 </section>
 <?php } ?>
-<footer class="footer py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 my-3 left_col">
-                <a href="index.php"> <img src="assets/images/logo-2.png" alt="" /></a>
-                <div class="icon">
-                    <!-- <p class="my-2"><i class="fas fa-map-marker-alt mr-2"></i> Location: Name</p> -->
-                    <p class="my-2"><i class="far fa-envelope mr-2"></i>Email: <a href="mailto:contact@querilla.com">contact@querilla.com</a></p>
-                    <p class="my-2"><i class="fab fa-skype mr-2"></i>Skype id: <a href="skype:assignmenthelper?chat">assignmenthelper</a></p>
+<footer class="footer2 pb-1">
+    <div style="" class="container">
+    <div class="text-center text-light pb-2" style="font-size:13px">Disclaimer: Revision Papers are for guidance purposes not for Submission....We do not assist students to cheat.</div>
+        <!-- <div class="row">
+            <div class="col-md-6 text-md-left text-center">
+                <p><small>Copyright &copy; Querilla.com</small></p>
+            </div>
+            <div class="col-md-6 text-md-right text-center">
+                <div class="icon2">
+                    <a href=""><i class="fab fa-dribbble"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-behance"></i></a>
+                    <a href=""><i class="fas fa-share-alt"></i></a>
                 </div>
             </div>
-            <!-- <div class="col-md-3 my-3 ml-auto medil_col">
-                <h5>Information</h5>
-                <p>Below it, add a disclaimer:  Revision Papers are for guidance purposes not for Submission....We do not assist students to cheat.</p>
-            </div> -->
-        </div>
+        </div> -->
     </div>
-</footer>
-<footer class="footer2 pb-3">
-    <div style="border-top: 1px solid #f9f9f9;" class="container pt-3">
-    <div class="text-center text-light">Disclaimer: Revision Papers are for guidance purposes not for Submission....We do not assist students to cheat.</div></div>
 </footer>
 
 <script src="assets/js/bootstrap.min.js"></script>

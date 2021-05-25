@@ -6,10 +6,10 @@ class Product
     public function create($data, $file)
     {
         $config= new Config();
-        $title = $data['title'];
-        $price = $data['price'];
-        $description = $data['description'];
-        $big_des = $data['big_des'];
+        $title = $config->convert_sql($data['title']);
+        $price = $config->convert_sql($data['price']);
+        $description = $config->convert_sql($data['description']);
+        $big_des = $config->convert_sql($data['big_des']);
         if (empty($file['img1']['name']) | empty($title) | empty($price) | empty($description)){
             $_SESSION['alert']="All Field is Required";
             header("location:../admin/add_product.php");
@@ -20,7 +20,7 @@ class Product
                 $product_file = "";
             }
             $images = $this->image($file['img1']);
-            $insert = $config->query("INSERT INTO `products`(`title`, `description`, `big_des`, `file`, `price`, `images`) VALUES (\"$title\",\"$description\",\"$big_des\",'$product_file','$price','$images')");
+            $insert = $config->query("INSERT INTO `products`(`title`, `description`, `big_des`, `file`, `price`, `images`) VALUES ('$title','$description','$big_des','$product_file','$price','$images')");
             if ($insert===true){
                 $_SESSION['alert']="Success";
                 header("location:../admin/add_product.php");

@@ -75,7 +75,7 @@ $data = mysqli_fetch_array($select);
     <div class="container">
         <div class="header text-center">
             <h2>Other Products</h2>
-            <p>Mirum est notare quam littera gothica quam nunc putamus parum claram!</p>
+            <p>University revision papers for your guidance</p>
         </div>
     </div>
 </section>

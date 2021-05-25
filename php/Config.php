@@ -5,14 +5,14 @@ class Config
 {
     public function con()
     {
+        // $host = "localhost";
+        // $user = "root";
+        // $pass = "";
+        // $db   = "querilla";
         $host = "localhost";
-        $user = "root";
-        $pass = "";
-        $db   = "querilla";
-//        $host = "sdb-b.hosting.stackcp.net";
-//        $user = "querilla-7164";
-//        $pass = "9wn59bfj4e";
-//        $db   = "querilla-3136394f2c";
+        $user = "nakurubu_querill";
+        $pass = "9wn59bfj4e";
+        $db   = "nakurubu_querilla";
         $con  = mysqli_connect($host,$user,$pass,$db);
         if ($con==true){
             return $con;
@@ -25,4 +25,8 @@ class Config
     {
         return mysqli_query($this->con(),$sql);
     }
+    public function convert_sql($string)
+	{
+		return mysqli_real_escape_string($this->con(),$string);
+	}
 }

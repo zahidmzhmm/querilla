@@ -15,6 +15,21 @@ include "includes/header.php";
     </div>
 </header>
 <section class="reg_body my-5">
+    <section>
+    <div class="container py-3">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- index_page -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4574787651313621"
+             data-ad-slot="6201557053"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</section>
     <div class="container">
         <div class="col-lg-8 col-md-10 py-5 col_border m-auto">
             <div class="col-md-10 m-auto">

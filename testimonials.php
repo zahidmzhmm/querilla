@@ -13,6 +13,19 @@ include "includes/header.php";
             </div>
         </div>
     </header>
+    <div class="container py-3">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- index_page -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4574787651313621"
+             data-ad-slot="6201557053"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 <div class="container my-5 py-5">
     <div class="my-4">
         <p>Before I started using revision papers from <b>querilla.com,</b> I used to panic whenever I was about to take my exams. I must admit that past papers from you guys have really helped me in Preparing for exams</p>
