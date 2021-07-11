@@ -1,12 +1,12 @@
 <?php
 include "php/controller.php";
-if(!isset($_GET['product_id'])){
+if (!isset($_GET['product_id'])) {
     header("location:shop.php");
 }
 $product_id = $_GET['product_id'];
 $select = $config->query("SELECT * FROM `products` WHERE id='$product_id'");
 $checking = mysqli_num_rows($select);
-if (!$checking==1){
+if (!$checking == 1) {
     header("location:shop.php");
 }
 $data = mysqli_fetch_array($select);
@@ -17,7 +17,8 @@ include "includes/header.php";
 ?>
 <section class="product_body pt-5">
     <div class="container my-5">
-        <?php if (isset($_SESSION['return'])){ ?><div class="alert alert-warning"><?= $_SESSION['return']; ?></div> <?php unset($_SESSION['return']); } ?>
+        <?php if (isset($_SESSION['return'])) { ?><div class="alert alert-warning"><?= $_SESSION['return']; ?></div> <?php unset($_SESSION['return']);
+                                                                                                                } ?>
         <div class="row pt-5">
             <div class="col-md-5">
                 <div class="img">
@@ -27,21 +28,7 @@ include "includes/header.php";
             <div class="col-md-7">
                 <div class="text">
                     <h4><?= $data['title'] ?></h4>
-<!--                    <div class="row m-0 p-0">-->
-<!--                        <div class="icon">-->
-<!--                            <span><i class="fas fa-star"></i></span>-->
-<!--                            <span><i class="fas fa-star"></i></span>-->
-<!--                            <span><i class="fas fa-star"></i></span>-->
-<!--                            <span><i class="fas fa-star"></i></span>-->
-<!--                            <span><i class="fas fa-star"></i></span>-->
-<!--                        </div>-->
-<!--                        |-->
-<!--                        <p>3rationg(s)</p>-->
-<!--                        |-->
-<!--                        <p><a href="">add your Review</a></p>-->
-<!--                    </div>-->
                     <p class="dolor">$<?= $data['price'] ?>
-<!--                        <del> $96.00</del>-->
                     </p>
                     <hr />
                     <div class="text_medil">
@@ -86,8 +73,8 @@ include "includes/header.php";
         <div class="row">
             <?php
             $select = $config->query("SELECT * FROM `products` where status='1' order by id desc limit 4");
-            while ($data = mysqli_fetch_array($select)){
-                ?>
+            while ($data = mysqli_fetch_array($select)) {
+            ?>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="all_div">
                         <img style="height: 20rem;" src="uploads/<?= $data['images'] ?>" alt="" />

@@ -15,14 +15,9 @@ include "includes/header.php"; ?>
     <div class="container py-3">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- index_page -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4574787651313621"
-             data-ad-slot="6201557053"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4574787651313621" data-ad-slot="6201557053" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
     <div class="container">
@@ -60,18 +55,19 @@ include "includes/header.php"; ?>
             <div class="col-md-6">
                 <div class="right_div mb-4">
                     <h4 class="mb-5">Contact Us.</h4>
-                    <?php if (isset($_SESSION['msg'])){ ?><div class="alert alert-warning"><?= $_SESSION['msg'] ?></div> <?php unset($_SESSION['msg']); } ?>
+                    <?php if (isset($_SESSION['msg'])) { ?><div class="alert alert-warning"><?= $_SESSION['msg'] ?></div> <?php unset($_SESSION['msg']);
+                                                                                                                        } ?>
                     <form method="post" action="php/controller.php">
                         <?php
-                        if (isset($_SESSION['User'])){
-                            ?>
+                        if (isset($_SESSION['User'])) {
+                        ?>
                             <input type="hidden" name="email" value="<?= $_SESSION['User'] ?>">
-                            <?php
-                        }else{
-                            ?>
+                        <?php
+                        } else {
+                        ?>
                             <label>Email *</label>
                             <input name="email" type="text" class="form-control" />
-                            <?php
+                        <?php
                         }
                         ?>
                         <label>Subject *</label>

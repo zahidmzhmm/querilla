@@ -7,27 +7,22 @@ $meta_description = "We offer quality revision papers and professional online tu
 $meta_keywords = "academic papers, exams, revision papers, Online tutoring, querilla, quality revision papers, papers from top universities, online tutoring, affordable revision papers";
 include "includes/header.php";
 ?>
-    <header class="reg_header">
-        <div class="container pt-3 text-center">
-            <div class="text">
-                <h2>About Us</h2>
-                <p><a href="index.php">Home</a> / About Us</p>
-            </div>
+<header class="reg_header">
+    <div class="container pt-3 text-center">
+        <div class="text">
+            <h2>About Us</h2>
+            <p><a href="index.php">Home</a> / About Us</p>
         </div>
-    </header>
-    <div class="container py-3">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- index_page -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4574787651313621"
-             data-ad-slot="6201557053"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
     </div>
+</header>
+<div class="container py-3">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- index_page -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4574787651313621" data-ad-slot="6201557053" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <div class="container my-5 py-5">
     <h2 class="text-bold">Quality Revision Papers | Affordable Revision Papers for College</h2>
     <p class="mt-3">Querilla.com is a legit company that offers quality revision papers and professional online tutoring services. The idea of establishing this online firm was inspired by the fact that students struggle in not only writing different types of academic papers but also in preparing for exams. While the benefits of using revision papers when learning how to write or when preparing for a test have been proven beyond reasonable doubt, students struggle to access them. This online company was thus established so that it can solve this evident problem. Going in line with this, we offer helpful yet affordable revision papers for college as well as other academic levels. If you have therefore been looking for this kind of papers then you should consider your search to be over.</p>
