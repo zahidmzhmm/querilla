@@ -58,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621934252462</updated>
       <workItem from="1621934258907" duration="1996000" />
+      <workItem from="1625977729526" duration="244000" />
     </task>
     <servers />
   </component>
@@ -74,6 +75,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
