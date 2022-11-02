@@ -39,7 +39,7 @@ class Product
         $file_exp = explode('.',$file_name);
         $file_ext = end($file_exp);
         $flname   = rand(10001,9999999).time().'.'.$file_ext;
-        move_uploaded_file($file_tmp,'../uploads/'.$flname);
+        //move_uploaded_file($file_tmp,'../uploads/'.$flname);
         return $flname;
     }
 }

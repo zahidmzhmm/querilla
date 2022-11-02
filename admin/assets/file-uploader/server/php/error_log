@@ -1,0 +1,3 @@
+[23-Aug-2022 09:36:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home1/charleskan/querilla.com/admin/assets/file-uploader/server/php/UploadHandler.php on line 436
+[23-Aug-2022 09:36:48 UTC] PHP Warning:  A non-numeric value encountered in /home1/charleskan/querilla.com/admin/assets/file-uploader/server/php/UploadHandler.php on line 340
+[23-Aug-2022 09:36:48 UTC] no decode delegate for this image format `' @ error/constitute.c/ReadImage/564
