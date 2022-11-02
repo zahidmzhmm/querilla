@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bd0bb7c-a42f-46cb-bea6-ca2ab14e530c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploads/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/place-order-gen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/www.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ct.php" beforeDir="false" afterPath="$PROJECT_DIR$/ct.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +57,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Server/htdocs/querilla/assets",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Server\htdocs\querilla\assets" />
+      <recent name="C:\Server\htdocs\querilla\includes" />
+      <recent name="C:\Server\htdocs\querilla\php" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -71,7 +82,7 @@
       <updated>1621934252462</updated>
       <workItem from="1621934258907" duration="1996000" />
       <workItem from="1625977729526" duration="244000" />
-      <workItem from="1667387312279" duration="550000" />
+      <workItem from="1667387312279" duration="2888000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,17 @@
+{
+    "name": "zahid/querilla",
+    "autoload": {
+        "psr-4": {
+            "Zahid\\Querilla\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zahid Mzhmm",
+            "email": "zahidmzhmm@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    }
+}
