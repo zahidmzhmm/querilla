@@ -59,7 +59,15 @@
                         <td class="text-center"><b>&dollar;<?= isset($totalamnt) ? $totalamnt : '0.00' ?></b></td>
                     </tr>
                 </table>
-                <a href="php/place-order-gen.php?payment_gen" class="btn btn-primary d-block mb-2">Generate order and send email</a>
+                <form action="php/place-order-gen.php" method="post">
+
+                    <input type="text" placeholder="Name" class="form-control mb-2" name="name">
+                    <input type="text" placeholder="Email" class="form-control mb-2" name="email">
+                    <input type="text" placeholder="Address" class="form-control mb-2" name="address">
+                    <button type="submit" name="payment_gen"
+                            class="btn btn-primary d-block w-100 mb-2">Generate order and send email
+                    </button>
+                </form>
                 <div id="smart-button-container">
                     <div style="text-align: center;">
                         <div id="paypal-button-container"></div>

@@ -7,16 +7,20 @@ use Dompdf\Dompdf;
 $folder = "querilla";
 $file_name = "invoice.pdf";
 
-$server = "premium59.web-hosting.com";
-$user = "noreply@studyremit.de";
-$password = "h5P-!WziRE0^";
+$server = "bh-22.webhostbox.net";
+$user = "noreply@querilla.com";
+$password = "Ox+i.(F3f8AU";
 $admin = "perimwa@gmail.com";
 
-if (isset($_GET['payment_gen'])) {
+if (isset($_POST['payment_gen'])) {
     $lists = $_SESSION['Product'];
+    $name = $_REQUEST['name'] ?? '';
+    $email = $_REQUEST['email'] ?? '';
+    $address = $_REQUEST['address'] ?? '';
     $products = [];
     $total = 0;
     $total_qty = 0;
+    $file_logo = base64_encode(file_get_contents('../assets/images/logo.png'));
     if (count($lists) > 0) {
 
         $content = '<!doctype html>
@@ -46,7 +50,7 @@ if (isset($_GET['payment_gen'])) {
                     }";
         $content .= "thead{color:#555;background:#ddd;}";
         $content .= "thead td{padding:.3rem .7rem}";
-        $content .= "tbody td{padding:.3rem .7rem;color:#555;border-top:1px solid #aaa}";
+        $content .= "tbody .td-cls td{padding:.3rem .7rem;color:#555;border-top:1px solid #aaa}";
         $content .= "tfoot{border-top:1.7px solid #aaa;}";
         $content .= "tfoot td{padding:.3rem .7rem;color:#555;}";
         $content .= "hr{height:1.1px;background:#aaa;border:none}";
@@ -54,10 +58,27 @@ if (isset($_GET['payment_gen'])) {
         $content .= "h1{text-align:right;}p{color:#555}";
         $content .= '</style>';
 
+        $content .= '<table>
+<tr>
+<td width="50%">';
+        $content .= '<img src="data:image/png;base64,' . $file_logo . '" height="6% " width="50% " />';
+        $content .= '</td>
+<td width="50%">';
+
         $content .= "<h1>Invoice</h1><br>";
+        $content .= "<p><b>Invoice No: </b>" . mt_rand(1000, 99999) . "</p>";
         $content .= "<p><b>Invoice Date:</b> ";
         $content .= date('d/m/Y');
-        $content .= "</p><br><br><br>";
+        $content .= "</p><br>";
+        $content .= '</td>
+</tr>
+
+</table>';
+
+        $content .= "<p style='text-align: left'>" . $name . "</p>";
+        $content .= "<p style='text-align: left'>" . $email . "</p>";
+        $content .= "<p style='text-align: left'>" . $address . "</p>";
+        $content .= "<br>";
         $content .= "<table width='100%'>
                         <thead>
                             <tr>
@@ -79,7 +100,7 @@ if (isset($_GET['payment_gen'])) {
             $total += $product['price'] * $lists[$i]['quantity'];
             $total_qty += $lists[$i]['quantity'];
 
-            $content .= "<tr>";
+            $content .= "<tr class='td-cls'>";
             $content .= "<td>" . ($i + 1) . "</td>";
             $content .= "<td>" . $product['title'] . "</td>";
             $content .= "<td style='text-align: center'>" . $lists[$i]['quantity'] . "</td>";
@@ -101,7 +122,7 @@ if (isset($_GET['payment_gen'])) {
 
         $content .= '<body>';
 
-        $content .= "<br><br><br><br><p style='text-align: center;font-style: italic'>Virtual Office Registered 321 – 323 High Road Chadwell Heath RM6 6AX United Kingdom</p>";
+        $content .= "<br><br><br><br><p style='text-align: center;font-style: italic'>querilla.com</p>";
 
 
         $content .= "</body></html>";
@@ -134,6 +155,7 @@ if (isset($_GET['payment_gen'])) {
         if ($mail->Send()) {
             $_SESSION['success'] = "Success";
         }
+        unset($_SESSION['Product']);
         unlink($file_name);
         header("location:../cart.php");
     }
