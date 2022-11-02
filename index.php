@@ -49,7 +49,7 @@ include "includes/header.php"; ?>
             ?>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="all_div mb-0">
-                    <img style="height: 13rem;" src="uploads/<?= $data['images'] ?>" alt="" />
+                    <img style="height: 13rem;" src="<?= file_exists('uploads/' . $data['images']) ? 'uploads/' . $data['images'] : 'uploads/no-img.jpeg' ?>" alt="" />
                     <div class="text">
                         <h5><a href="product_details.php?product_id=<?= $data['id'] ?>"><?= $data['title'] ?></a></h5>
                         <div class="top_hover">
