@@ -7,6 +7,11 @@ use Dompdf\Dompdf;
 $folder = "querilla";
 $file_name = "invoice.pdf";
 
+$server = "premium59.web-hosting.com";
+$user = "noreply@studyremit.de";
+$password = "h5P-!WziRE0^";
+$admin = "perimwa@gmail.com";
+
 if (isset($_GET['payment_gen'])) {
     $lists = $_SESSION['Product'];
     $products = [];
@@ -112,15 +117,15 @@ if (isset($_GET['payment_gen'])) {
         $mail = new \PHPMailer\PHPMailer\PHPMailer();
 
         $mail->IsSMTP();
-        $mail->Host = 'premium59.web-hosting.com';
+        $mail->Host = $server;
         $mail->Port = '465';
         $mail->SMTPAuth = true;
-        $mail->Username = 'noreply@studyremit.de';
-        $mail->Password = 'h5P-!WziRE0^';
+        $mail->Username = $user;
+        $mail->Password = $password;
         $mail->SMTPSecure = 'ssl';
-        $mail->From = 'noreply@studyremit.de';
+        $mail->From = $user;
         $mail->FromName = 'Querilla';
-        $mail->AddAddress('zahidmzhmm@gmail.com', 'Zahid');
+        $mail->AddAddress($admin, 'Admin');
         $mail->WordWrap = 50;
         $mail->IsHTML(true);
         $mail->AddAttachment($file_name);
