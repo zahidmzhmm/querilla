@@ -94,7 +94,7 @@ $ac_class = end($php_self);
                         </a>
                     </li>
                     <li class="sub-menu">
-                        <a class="<?= $ac_class == 'add_product.php' ? 'active' : '' ?><?= $ac_class == 'view_product.php' ? 'active' : '' ?>" href="javascript:void(0);">
+                        <a class="<?= $ac_class == 'add_product.php' ? 'active' : '' ?><?= $ac_class == 'view_product.php' ? 'active' : '' ?><?= $ac_class == 'edit_product.php' ? 'active' : '' ?>" href="javascript:void(0);">
                             <i class="fa fa-sitemap"></i>
                             <span>Product</span>
                         </a>

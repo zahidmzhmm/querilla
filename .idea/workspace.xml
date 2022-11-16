@@ -19,13 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bd0bb7c-a42f-46cb-bea6-ca2ab14e530c" name="Default Changelist" comment="" />
+    <list default="true" id="9bd0bb7c-a42f-46cb-bea6-ca2ab14e530c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/edit_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/querilla.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/querilla.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controller.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -33,6 +44,17 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1t1Qjn380dskY4Pnc6idiF92fRa" />
   <component name="ProjectLevelVcsManager">
@@ -42,17 +64,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Server/htdocs/querilla/fonts",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Server\htdocs\querilla\fonts" />
@@ -61,7 +77,7 @@
       <recent name="C:\Server\htdocs\querilla\php" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -74,12 +90,13 @@
       <updated>1621934252462</updated>
       <workItem from="1621934258907" duration="1996000" />
       <workItem from="1625977729526" duration="244000" />
-      <workItem from="1667387312279" duration="14012000" />
+      <workItem from="1667387312279" duration="14646000" />
+      <workItem from="1668601989817" duration="3799000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -91,6 +108,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

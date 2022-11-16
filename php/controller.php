@@ -67,3 +67,6 @@ if (isset($_POST['login_admin'])) {
         header("location:../product_details.php?product_id=$product_id");
     }
 }
+if (isset($_POST['update_product'])) {
+    $product->update($_POST, $_FILES);
+}

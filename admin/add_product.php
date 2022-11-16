@@ -12,7 +12,7 @@ require_once "includes/header.php";
                     <div class="col-sm-5">
                         <div class="fileupload fileupload-new" data-provides="fileupload">
                             <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
-                                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                                <img src="https://via.placeholder.com/200x150" alt="" />
                             </div>
                             <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
                             <div>
